@@ -1,0 +1,10 @@
+var message = "Help me, Obi-wan Kenobi. You're my aonly hope!";
+console.log(message);
+var epsode = 4;
+console.log("This is epsode: " + epsode);
+epsode = epsode + 1;
+console.log("Next epsode is " + epsode);
+var favoriteDroid;
+favoriteDroid = 'BB-8';
+//favoriteDroid = 10;
+console.log("My favorite droid is " + favoriteDroid);
