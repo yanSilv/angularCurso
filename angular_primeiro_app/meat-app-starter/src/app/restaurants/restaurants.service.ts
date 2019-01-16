@@ -24,5 +24,9 @@ export class RestaurantsService {
         return this.http.get(`${MEAT_API}/restaurants/${id}`)
                         .map(response => response.json())
                         .catch(ErrorHandler.handerError);
+<<<<<<< HEAD
     }
+=======
+    } 
+>>>>>>> be5fa26dd54b9e506a2f1e8565ce3ea8ccc74579
 }
