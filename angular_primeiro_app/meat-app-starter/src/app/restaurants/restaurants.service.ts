@@ -31,4 +31,5 @@ export class RestaurantsService {
                         .map(response => response.json())
                         .catch(ErrorHandler.handerError);
     }
+
 }
