@@ -23,7 +23,8 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
 import { OrderComponent } from './order/order.component';
 import { InputComponent } from './shared/input/input.component';
 import { RadioComponent } from './shared/radio/radio.component';
-import { OrderItemComponent } from './order/order-item/order-item.component'
+import { OrderItemComponent } from './order/order-item/order-item.component';
+import { OrderServie } from './order/order.service';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { OrderItemComponent } from './order/order-item/order-item.component'
   providers: [
     RestaurantsService,
     ShoppingCartService,
+    OrderServie,
     {provide: LOCALE_ID, useValue: 'pt-BR'}
 
   ],
