@@ -9,6 +9,7 @@ import { OrderServie } from './order.service';
 })
 export class OrderComponent implements OnInit {
 
+  delivery: number = 8;
 
   paymentOptions: RadioOption[] = [
     {label: "Dinheiro", value: "MON"},
@@ -19,6 +20,10 @@ export class OrderComponent implements OnInit {
   constructor(public orderService: OrderServie) { }
 
   ngOnInit() {
+  }
+
+  itemsValue(): number {
+    return this.orderService.itemsValue();
   }
 
   cartItem(): CartItem[] {
