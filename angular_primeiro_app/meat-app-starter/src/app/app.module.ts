@@ -3,6 +3,7 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ROUTES } from 'app/app.routes'
 
@@ -55,7 +56,8 @@ import { RatingComponent } from './shared/rating/rating.component';
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [ RouterModule ],
   providers: [
