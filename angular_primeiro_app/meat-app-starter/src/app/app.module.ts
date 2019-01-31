@@ -21,13 +21,11 @@ import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shoppin
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
 import { OrderComponent } from './order/order.component';
-import { InputComponent } from './shared/input/input.component';
-import { RadioComponent } from './shared/radio/radio.component';
 import { OrderItemComponent } from './order/order-item/order-item.component';
 import { OrderServie } from './order/order.service';
 import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
-import { RatingComponent } from './shared/rating/rating.component';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -43,19 +41,15 @@ import { RatingComponent } from './shared/rating/rating.component';
     ShoppingCartComponent,
     ReviewsComponent,
     OrderComponent,
-    InputComponent,
-    RadioComponent,
     OrderItemComponent,
     DeliveryCostsComponent,
-    OrderSummaryComponent,
-    RatingComponent
+    OrderSummaryComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES),
-    FormsModule,
-    ReactiveFormsModule
+    SharedModule
   ],
   exports: [ RouterModule ],
   providers: [
