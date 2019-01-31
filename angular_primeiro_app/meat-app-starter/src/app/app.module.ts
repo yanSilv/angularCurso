@@ -20,10 +20,7 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
 import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
-import { OrderComponent } from './order/order.component';
-import { OrderItemComponent } from './order/order-item/order-item.component';
 import { OrderServie } from './order/order.service';
-import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { SharedModule } from './shared/shared.module';
 
@@ -40,9 +37,6 @@ import { SharedModule } from './shared/shared.module';
     MenuItemComponent,
     ShoppingCartComponent,
     ReviewsComponent,
-    OrderComponent,
-    OrderItemComponent,
-    DeliveryCostsComponent,
     OrderSummaryComponent
   ],
   imports: [
