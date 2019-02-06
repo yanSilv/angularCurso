@@ -22,6 +22,7 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
 import { OrderServie } from './order/order.service';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { SharedModule } from './shared/shared.module';
+import { NotificationService } from './shared/messages/notification.service'
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { SharedModule } from './shared/shared.module';
     RestaurantsService,
     ShoppingCartService,
     OrderServie,
+    NotificationService,
     {provide: LOCALE_ID, useValue: 'pt-BR'}
 
   ],
