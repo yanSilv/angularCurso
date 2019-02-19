@@ -1,8 +1,8 @@
-import { Response } from '@angular/http'
+import { HttpErrorResponse } from '@angular/common/http'
 import { Observable } from 'rxjs/Observable';
 
 export class ErrorHandler {
-    static handerError(error: Response | any) {
+    static handerError(error: HttpErrorResponse | any) {
         let errorMessage: string
 
         if ( error instanceof Response ) {
