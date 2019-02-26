@@ -370,5 +370,22 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "name": "fgdfdf",
+      "email": "jaguaryan@gmail.com",
+      "emailConfirmation": "jaguaryan@gmail.com",
+      "address": "kfjdkhfjhdj",
+      "number": 12,
+      "optionalAddress": "",
+      "paymentOptions": "MON",
+      "orderItem": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        }
+      ],
+      "id": 1
+    }
+  ]
 }
