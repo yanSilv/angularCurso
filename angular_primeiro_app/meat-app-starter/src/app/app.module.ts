@@ -23,7 +23,8 @@ import { OrderServie } from './order/order.service';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { SharedModule } from './shared/shared.module';
 import { NotificationService } from './shared/messages/notification.service';
-import { NotFoundComponent } from './not-found/not-found.component'
+import { NotFoundComponent } from './not-found/not-found.component';
+import { LoginComponent } from './security/login/login.component'
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { NotFoundComponent } from './not-found/not-found.component'
     ShoppingCartComponent,
     ReviewsComponent,
     OrderSummaryComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
