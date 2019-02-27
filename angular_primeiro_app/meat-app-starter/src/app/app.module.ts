@@ -25,6 +25,7 @@ import { SharedModule } from './shared/shared.module';
 import { NotificationService } from './shared/messages/notification.service';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './security/login/login.component'
+import { LoginService } from './security/login/login.service'
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { LoginComponent } from './security/login/login.component'
   providers: [
     RestaurantsService,
     ShoppingCartService,
+    LoginService,
     OrderServie,
     NotificationService,
     {provide: LOCALE_ID, useValue: 'pt-BR'}
